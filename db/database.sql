@@ -80,8 +80,8 @@ CREATE TABLE registros501 (
 );
 
 CREATE TABLE registros502 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -94,12 +94,12 @@ CREATE TABLE registros502 (
     pais_transporte VARCHAR(3),
     identificador_transporte VARCHAR(70),
     fecha_pago VARCHAR(30),
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros503 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -109,12 +109,12 @@ CREATE TABLE registros503 (
     guia VARCHAR(20),
     identificador_guia VARCHAR(1),
     fecha_pago VARCHAR(30),
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros504 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -124,12 +124,12 @@ CREATE TABLE registros504 (
     num_contenedor VARCHAR(20),
     tipo VARCHAR(2),
     fecha_pago VARCHAR(30),
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros505 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -152,12 +152,12 @@ CREATE TABLE registros505 (
     cp_proveedor VARCHAR(10),
     municipio_proveedor VARCHAR(80),    
     fecha_pago VARCHAR(30),
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros506 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -167,12 +167,12 @@ CREATE TABLE registros506 (
     tipo_fecha VARCHAR(2),
     fecha_operacion VARCHAR(30),
     fecha_validacion_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros507 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -184,12 +184,12 @@ CREATE TABLE registros507 (
     tipo_pedimento INT,
     complemento_caso TEXT,    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros508 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -207,12 +207,12 @@ CREATE TABLE registros508 (
     cantidad_unidades DECIMAL(17, 6),
     titulos_asignados DECIMAL(17, 6),    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros509 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -224,12 +224,12 @@ CREATE TABLE registros509 (
     tipo_tasa VARCHAR(2),
     tipo_pedimento INT,    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros510 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -241,12 +241,12 @@ CREATE TABLE registros510 (
     importe_pago DECIMAL(13, 0),    
     tipo_pedimento INT,    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros511 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -257,12 +257,12 @@ CREATE TABLE registros511 (
     observaciones VARCHAR(120),    
     tipo_pedimento INT,    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros512 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -279,12 +279,12 @@ CREATE TABLE registros512 (
     mercancia_descargada DECIMAL(17, 6),
     tipo_pedimento INT,
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros520 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -301,12 +301,12 @@ CREATE TABLE registros520 (
     clave_pais VARCHAR(3),
     pais_destinatario VARCHAR(3),
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros551 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -340,12 +340,12 @@ CREATE TABLE registros551 (
     tipo_operacion VARCHAR(1),
     clave_documento VARCHAR(2),   
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros552 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -357,12 +357,12 @@ CREATE TABLE registros552 (
     vin_numero_serie VARCHAR(17),    
     kilometraje_vehiculo DECIMAL(13, 0), 
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros553 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -377,12 +377,12 @@ CREATE TABLE registros553 (
     valor_comercial_dolares DECIMAL(17, 6),
     cantidad_um_tarifa DECIMAL(17, 6),
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros554 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -395,12 +395,12 @@ CREATE TABLE registros554 (
     identificador_caso VARCHAR(20), 
     complemento_caso TEXT,    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros555 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -419,12 +419,12 @@ CREATE TABLE registros555 (
     cantidad_unidades DECIMAL(17, 6),
     titulos_asignados DECIMAL(17, 6),
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros556 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -437,12 +437,12 @@ CREATE TABLE registros556 (
     tasa_contribucion DECIMAL(17, 6), 
     tipo_tasa VARCHAR(2),   
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros557 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -455,12 +455,12 @@ CREATE TABLE registros557 (
     forma_pago VARCHAR(3), 
     importe_pago DECIMAL(13, 0),   
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros558 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -472,12 +472,12 @@ CREATE TABLE registros558 (
     secuencia_observacion INT,
     observaciones VARCHAR(120),     
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros701 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -495,12 +495,12 @@ CREATE TABLE registros701 (
     patente_original VARCHAR(4),
     seccion_original VARCHAR(3),    
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
 
 CREATE TABLE registros702 (
-    id INT NOT NULL AUTO_INCREMENT,
-    linea int,
+    linea int AUTO_INCREMENT,
+    id INT NOT NULL ,    
     clave_cliente VARCHAR(255) NOT NULL,
     identificador VARCHAR(255) NOT NULL,
     pedimento_completo VARCHAR(255) NOT NULL,
@@ -512,5 +512,5 @@ CREATE TABLE registros702 (
     importe_pago DECIMAL(13, 0),     
     tipo_pedimento INT,        
     fecha_pago VARCHAR(30),    
-    PRIMARY KEY (id, linea)
+    PRIMARY KEY (linea, id)
 );
