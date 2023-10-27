@@ -735,3 +735,10 @@ export const postRegistros = async (req, res) => {
     return res.status(200).json({ msg: "Se agregaron registros exitosamente" });
 };
 
+export const getIdsReg  = async (req, res) => {
+    const [rows] = await pool.query('SELECT DISTINCT identificador FROM registros501')
+    const result = rows.map(item => {
+        return item.identificador
+    })    
+    res.send(result)
+}
