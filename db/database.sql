@@ -514,3 +514,23 @@ CREATE TABLE registros702 (
     fecha_pago VARCHAR(30),    
     PRIMARY KEY (linea, id)
 );
+
+CREATE TABLE facturas (
+    consecutivo int AUTO_INCREMENT,
+    numfactura VARCHAR(50) NOT NULL ,    
+    fechafactura DATETIME NOT NULL,
+    generador VARCHAR(255) NOT NULL,
+    cliente VARCHAR(255) NOT NULL,        
+    PRIMARY KEY (consecutivo)
+);
+
+CREATE TABLE detalle_factura (
+    linea int AUTO_INCREMENT,
+    consecutivo int NOT NULL,
+    producto VARCHAR(150) NOT NULL,
+    descripcion VARCHAR(500) NOT NULL,
+    cantidad DECIMAL(18, 8) NOT NULL,
+    precio_unitario DECIMAL(18, 8) NOT NULL,
+    valor_total DECIMAL(18, 8) NOT NULL,
+    PRIMARY KEY(linea, consecutivo)
+)

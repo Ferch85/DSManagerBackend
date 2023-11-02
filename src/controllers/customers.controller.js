@@ -23,8 +23,15 @@ export const postCustomer= async (req, res) => {
     res.send({rows})
 }
 
-export const putCustomer = (req, res) => {
-    res.send('actualizando usuarios')
+export const putCustomer = async (req, res) => {
+    const {id, customer_Id, name, rfc, streets, numext, cp, colonia, ciudad, estado, pais, telefono, curp} = req.body;
+    const [result] = await pool.query('UPDATE customers SET name = ?, telefono = ?, ciudad = ?, estado = ? WHERE id = ?', [name, telefono, ciudad, estado, id]);    
+    if(result.affectedRows <= 0) {
+        return res.status(404).json({
+            message: 'customer not found'
+        })
+    }
+    res.sendStatus(201)
 }
 
 export const deleteCustomer = async (req, res) => {
