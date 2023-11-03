@@ -1,7 +1,8 @@
 import { pool } from '../db.js'
 
-export const getDetalles_facturas = async (req, res) => {    
-    const [rows] = await pool.query('SELECT * FROM detalle_factura')
+export const getDetalles_facturas = async (req, res) => {  
+    const consecutivo = req.params.consecutivo;  
+    const [rows] = await pool.query('SELECT * FROM detalle_factura WHERE consecutivo = ?', consecutivo)
     res.send(rows)
 }
 

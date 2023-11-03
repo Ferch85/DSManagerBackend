@@ -4,7 +4,7 @@ import { getDetalles_facturas, postDetalle_factura, putDetalle_factura, deleteDe
 
 const router = Router()
 
-router.get('/detalle_factura', getDetalles_facturas)
+router.get('/detalles_facturas/:consecutivo', getDetalles_facturas)
 
 router.get('/detalle_factura', getDetalle_factura)
 
