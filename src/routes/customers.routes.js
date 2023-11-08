@@ -10,7 +10,7 @@ router.get('/customers/:id', getCustomer)
 
 router.post('/customers', postCustomer)
 
-router.put('/customers', putCustomer)
+router.put('/customers/:id', putCustomer)
 
 router.delete('/customers/:id', deleteCustomer)
 
